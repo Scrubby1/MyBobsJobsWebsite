@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <!--Module Name: COMP2110 Web Technology
+        Student Name: Ethan Johnson
+        Student Number: 46449477-->
+
+
+
+    <head>
+        <title>Bob's Jobs</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" type="text/css" href="style.css">   
+        
+        <!-- Include Handlebars from a CDN -->
+        
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        
+        <script src="main.js" type=module defer></script>
+    </head>
+
+    <body>
+        <header>
+            
+            <div class = "page-header-main">
+                <p class="logo">Bob's Jobs</p>
+                
+
+                <!--Navigation bar using an unordered list with each link being a new list item, each list item has the select class for each link in the list.-->
+                <nav class="main-nav">
+                    <ul class="main-menu">
+                        <li class=selected><a href="#/">Home</a></li>
+                        <li class=selected><a href="#!/about">About Us</a></li>
+                        <li class=selected><a href="#!/help">Applicant Help</a></li>
+                    </ul>
+                </nav>
+
+                <!--Created a search bar with a search button and a button to clear the results and return to the home page-->
+                <div class="header-search">
+                    <input id="search" type="text" class="input" placeholder="Search...">
+                    <button id="searchbutton" class="search-results">search</button>
+                    <button id="clear" class="clear-results" >clear</button>
+                </div>
+
+            </div>
+        </header>
+
+
+        <!--the "mainMain" div houses the "main" div and adjusts the background for it-->
+        <div class="mainMain"> 
+            <!--The "main" div is the div which gets changed by all the view functions, it looks small, but it is powerful.-->
+            <div id="main">
+            </div>
+        </div>
+
+    </body>
+    <!--Footer file detailing copyright information and the owner of the website-->
+    <footer id="footer">
+        <p id="copyright">Copyright &copy; COMP2110 Web Designers, 2022.</p>
+        <p id="attribution">Bob's Jobs is a service of Bob Bobalooba Enterprises.</p>
+    </footer>
+</html>
